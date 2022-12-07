@@ -1,4 +1,6 @@
 #!/usr/bin/env node
-console.log('Welcome to the Brain Games!');
+import {getUserName} from "../src/cli.js";
 
-//chmod +x bin/brain-games.js.
+console.log("Welcome to the Brain Games!");
+
+getUserName();
