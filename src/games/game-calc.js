@@ -4,6 +4,7 @@ import startGame from '../index.js';
 
 
 const description = "What is the result of the expression?";
+
 const gamedata = () => {
     const valueFirst = getRandom(1, 20);
     const valueSec = getRandom(1, 20);
@@ -31,21 +32,3 @@ const gameCalc = () => {
 };
 
 export default gameCalc;
-
-//const calculate = (operation, firstOperand, secondOperand) => {
-//    switch (operation) {
-//      case '+':
-//        return firstOperand + secondOperand;
-//      case '-':
-//        return firstOperand - secondOperand;
-//      case '*':
- //       return firstOperand * secondOperand;
- //     default:
- //       return undefined;
-//    }
-//  };
-  
-
-
-
-
