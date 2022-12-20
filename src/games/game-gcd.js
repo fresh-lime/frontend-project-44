@@ -15,8 +15,8 @@ import startGame from '../index.js';
   const gamedata = () => {
     const valueFirst = getRandom(1, 20);
     const valueSec = (1, 20);
-    const question = `${valueFirst} ${valueSec}`
-      const corrAnswer = findGcd(valueFirst, valueSec);
+    const question = `${valueFirst} ${valueSec}`;
+    const corrAnswer = findGcd(valueFirst, valueSec);
       return [question, corrAnswer];
         };
 

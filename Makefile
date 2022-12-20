@@ -12,6 +12,9 @@ brain-even:
 
 brain-gcd:
 	node bin/brain-gcd.js
+
+brain-progression:
+     node bin/brain-progresion.js
 	
 lint:
 	npx eslint
