@@ -7,9 +7,10 @@ const isPrime = (randomNumber) => {
     if (randomNumber % i === 0) return false;
   }
   return true;
-};
+}
 
 const gamedata = () => {  
+  
   const number = getRandom();
   const question = getRandom(1, 50);
   const answer = isPrime(number) ? 'yes' : 'no';

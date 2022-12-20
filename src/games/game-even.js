@@ -1,4 +1,5 @@
 import readlineSync from 'readline-sync';
+import startGame from '../index.js';
 
 const contRounds = 3;
 const getRandom = (min, max) => Math.floor(Math.random() * (max - min + 1) + min);
@@ -7,18 +8,18 @@ if (num %2 === 0) {return 'yes';}
 else {return 'no'};
 }
 const description = 'Answer "yes" if the number is even, otherwise answer "no".';
-const gamedata = () => {
+const startGame = () => {
+  console.log("Welcome to the Brain Games!");
+    let userName = readlineSync.question('May I have your name?');
+    console.log(`Hello, ${userName}!`);
+    console.log(description);
+
     const question = getRandom(1, 100);
     const corrAnswer = isEven(question);
     return [question, corrAnswer];
   };
 
 const startGame = () => {
-
-    console.log("Welcome to the Brain Games!");
-    let userName = readlineSync.question('May I have your name?');
-    console.log(`Hello, ${userName}!`);
-    console.log(description);
 
 for (let i = 1; i <= contRounds; i += 1) {
     const [question, corrAnswer] = gamedata();
