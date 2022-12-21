@@ -8,9 +8,8 @@ const startGame = (description, gamedata) => {
   console.log(`Hello, ${userName}!`);
 
   console.log(description);
-  let corrAnswer = 0;
-
-  while (corrAnswer < contRounds) {
+  
+  for (let i = 1; i <= contRounds; i += 1) {
     const [question, corrAnswer] = gamedata();
     console.log(`'Question:' ${question}`);
     const answer = readlineSync.question('Your answer: ');
