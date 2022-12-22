@@ -11,7 +11,7 @@ const startGame = (description, gamedata) => {
   
   for (let i = 1; i <= contRounds; i += 1) {
     const [question, corrAnswer] = gamedata();
-    console.log(`'Question:' ${question}`);
+    console.log(`Question: ${question}`);
     const answer = readlineSync.question('Your answer: ');
 
     if (answer === corrAnswer.toString()) {
