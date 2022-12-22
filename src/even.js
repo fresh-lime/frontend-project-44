@@ -1,5 +1,4 @@
 const isEven = (num) => {
-    if (num %2 === 0) {return 'yes';}
-    else {return 'no'};
-    }
-    export default isEven;
+  if (num % 2 === 0) { return 'yes'; } return 'no';
+};
+export default isEven;
